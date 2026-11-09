@@ -78,7 +78,7 @@ def executar_analise(arquivo, tipo_executor):
     for i in range(N_WORKERS):
         pular = i * tamanho_parte
         if i == N_WORKERS - 1:
-            quantidade = total_linhas - pular  # a última parte leva o resto
+            quantidade = total_linhas - pular   
         else:
             quantidade = tamanho_parte
         argumentos.append((arquivo, pular, quantidade))
